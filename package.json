@@ -1,0 +1,10 @@
+{
+  "name": "a-vous-de-jouer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8080 --bind 127.0.0.1",
+    "test": "node tests/scoring.test.js",
+    "check": "node --check src/app.js && node --check src/games.js && node --check src/scoring.js"
+  }
+}

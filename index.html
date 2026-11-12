@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#176b57">
+    <meta name="description" content="Les jeux sur la table, les points dans la poche. Un compteur simple pour vos parties de Skyjo, Hilo, Flip 7, UNO, 6 qui prend et Phase 10.">
+    <title>À vous de jouer ! — Compteur de points</title>
+    <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="À vous de jouer, accueil"><span class="brand-icon" aria-hidden="true">⚄</span><span>À vous de jouer<span class="brand-dot">!</span></span></a>
+      <button class="help-button" type="button" id="help-button"><span aria-hidden="true">?</span> Mode d’emploi</button>
+    </header>
+    <main id="contenu" tabindex="-1"></main>
+    <footer class="site-footer"><span>Moins de calculs, plus de bons moments.</span><span>Fait pour jouer ensemble <span aria-hidden="true">✳</span></span></footer>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+    <div id="toast" class="toast" role="status" hidden></div>
+    <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+    <noscript><p class="noscript">Activez JavaScript dans votre navigateur pour utiliser le compteur de points.</p></noscript>
+  </body>
+</html>
